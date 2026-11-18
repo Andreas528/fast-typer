@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fast Typer</h1>
+    </header>
+
+    <main>
+        <section class="settings">
+            <p>Select test duration:</p>
+            <button>15</button>
+            <button>30</button>
+            <button>60</button>
+        </section>
+        <section class="typing-area">
+            <div class="text-display" id="text-display">
+                The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <input
+                type="text"
+                id="typing-input"
+                autocomplete="off"
+                spellcheck="false"
+            >
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
