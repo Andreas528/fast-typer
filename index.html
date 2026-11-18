@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Speed Tester</title>
+
+    <title>Fast Typer</title>
+
+    <!-- Google Font: JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <header>
-        <h1>Fast Typer</h1>
+        <h1>fast typer</h1>
     </header>
 
     <main>
         <section class="settings">
             <p>Select test duration:</p>
-            <button>15</button>
-            <button>30</button>
-            <button>60</button>
+
+            <button type="button">15</button>
+            <button type="button">30</button>
+            <button type="button">60</button>
         </section>
+
         <section class="typing-area">
-            <div class="text-display" id="text-display">
-                The quick brown fox jumps over the lazy dog.
-            </div>
+            <div class="text-display" id="text-display"></div>
 
             <input
                 type="text"
                 id="typing-input"
                 autocomplete="off"
+                autocapitalize="off"
                 spellcheck="false"
+                aria-label="Typing test input"
             >
         </section>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
